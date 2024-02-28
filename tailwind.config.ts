@@ -23,6 +23,8 @@ const config: Config = {
         "nft-deep-gray": "#7780A1",
         "nft-light-gray": "#262840",
         "nft-royal-blue": "#2A27C9",
+        "nft-purple-light-100": "#514CFF",
+        "nft-purple-light-200": "#514CFF26",
       },
     },
   },

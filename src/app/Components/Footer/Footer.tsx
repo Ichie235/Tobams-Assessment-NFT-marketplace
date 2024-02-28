@@ -58,7 +58,7 @@ export default function Footer({}): JSX.Element {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-4 lg:border lg:border-nft-light-gray px-12 lg:py-12">
+      <div className="flex flex-col gap-4 text-white lg:border lg:border-nft-light-gray px-12 lg:py-12">
         <Link href="#">Auctions</Link>
         <Link href="#">Roadmap</Link>
         <Link href="#">Discover</Link>

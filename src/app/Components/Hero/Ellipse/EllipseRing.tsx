@@ -13,7 +13,7 @@ import EllipseSmall from "../../../../../svg/EllipseSmall";
 
 export default function EllipseRing() {
   return (
-    <main className="mt-[-235px] md:-mt-20 lg:mt-0 w-full  flex flex-col items-center">
+    <main className="mt-[-235px] md:-mt-20 lg:mt-0 w-full  flex flex-col items-center absolute">
       <EllipseMainCover className="absolute" />
       <EllipseCover className="absolute " />
       <EllipseGrandParent className="absolute" />
@@ -78,35 +78,6 @@ export default function EllipseRing() {
           className="absolute bottom-[-25rem] right-[45rem]"
         />
       </div>
-      {/* <div className="mt-28 flex justify-center items-center z-50 md:hidden">
-        <div>
-          {" "}
-          <Image
-            src="/hero-icons/tiger-nft-icon.png"
-            width={89}
-            height={89}
-            alt="tiger nft icon"
-          />
-        </div>
-        <div>
-          {" "}
-          <Image
-            src="/hero-icons/parrot-nft-icon.png"
-            width={89}
-            height={89}
-            alt="parrot nft icon"
-          />
-        </div>
-        <div>
-          {" "}
-          <Image
-            src="/hero-icons/wolf-nft-icon.png"
-            width={89}
-            height={89}
-            alt="wolf nft icon"
-          />
-        </div>
-      </div> */}
     </main>
   );
 }

@@ -26,7 +26,9 @@ export default function RootLayout({
             <EllipseRing />
           </>
           {children}
-          {/* <Footer /> */}
+          <div className="z-50 mt-[500px]">
+            <Footer />
+          </div>
         </main>
       </body>
     </html>
