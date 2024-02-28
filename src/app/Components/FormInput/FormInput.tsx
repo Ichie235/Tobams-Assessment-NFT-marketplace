@@ -78,8 +78,8 @@ export default function FormInput(props: FormInputTypes) {
           data-focused={focused.toString()}
           className={`w-full h-10 ${
             props.disabled
-              ? " text-apt-placeholder-grey border-apt-placeholder-grey"
-              : " text-apt-black border-apt-blue-500 shadow-sm"
+              ? " text-nft-light-gray border-nft-deep-gray"
+              : " text-black shadow-sm"
           } bg-transparent outline-none resize-none placeholder:text-nft-deep-gray rounded py-2 px-6 lg:px-3 xl:px-7 overflow-hidden border text-black focus:outline-none  focus:border-nft-royal-blue focus:ring-1 focus:ring-nft-royal-blue ${
             font.className
           } ${props.className} `}

@@ -76,7 +76,7 @@ export default function Navbar({}): JSX.Element {
       </button>
       <aside
         className={
-          "lg:hidden fixed bg-[#262840] top-0 right-0 w-[62%]  flex flex-col justify-evenly gap-4 p-[30px] ease-in-out duration-1000 z-0 " +
+          "lg:hidden fixed bg-[#262840] top-0 right-0 w-[62%] text-white flex flex-col justify-evenly gap-4 p-[30px] ease-in-out duration-1000 z-0 " +
           (isMobileMenuOpen ? "translate-x-0" : "translate-x-full")
         }
       >

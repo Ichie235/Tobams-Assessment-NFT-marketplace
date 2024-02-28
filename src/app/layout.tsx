@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
+import EllipseRing from "./Components/Hero/Ellipse/EllipseRing";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="w-full h-screen overflow-x-hidden bg-nft-navy-blue">
+        <main className="relative w-full h-screen overflow-x-hidden bg-nft-navy-blue">
           <Navbar />
+          <>
+            <EllipseRing />
+          </>
           {children}
           {/* <Footer /> */}
         </main>
