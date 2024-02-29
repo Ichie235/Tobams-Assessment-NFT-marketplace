@@ -3,6 +3,7 @@ import Hero from "./Components/Hero/Hero";
 import LatestNftCard from "./Components/NftCard/LatestNftCard";
 import { NftLatestproject } from "../../library/nftData";
 import ToggleButton from "./Components/Button/ToggleButton";
+import Overline from "./Components/OverlineSection/Overline";
 
 export default function Home() {
   return (
@@ -29,40 +30,32 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="mt-20 md:mt-32 grid grid-cols-1 lg:grid-cols-2 items-center mx-5 md:mx-10 lg:mx-16 xl:mx-32">
-        <div>
-          <p className="text-nft-deep-gray text-base">OVERLINE</p>
-          <h1 className="text-white text-4xl md:text-6xl mt-5 md:mt-6">
-            Sapien ipsum scelerisque convallis <br /> fusce
-          </h1>
-          <p className="w-full md:w-[450px] mt-8 text-nft-deep-gray">
-            Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor
-            pulvinar ultricies dolor feugiat aliquam commodo.
-          </p>
-          <div className="flex gap-4 mt-5">
-            <ToggleButton
-              type="button"
-              className="w-36 bg-nft-deep-blue-gr p-2 text-white rounded-xl"
-            >
-              Get started
-            </ToggleButton>
-            <ToggleButton
-              type="button"
-              className="w-32 text-nft-deep-gray border-2 border-nft-light-gray rounded-xl p-2"
-            >
-              Learn more
-            </ToggleButton>
+      <Overline
+        title=" Sapien ipsum scelerisque convallis fusce"
+        description=" Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor
+          pulvinar ultricies dolor feugiat aliquam commodo."
+        image="/design-image.svg"
+      />
+      <Overline
+        className="lg:flex lg:flex-row-reverse gap-16"
+        title=" Habitant tristique aliquam in vel scelerisque"
+        description="Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo."
+        image="/design-image-2.svg"
+      >
+        <div className="flex gap-3 my-6">
+          <div className="flex flex-col gap-2">
+            <Image src="/Group.svg" width={32} height={32} alt=" icon" />
+            <p className="text-white text-xl">Sollicitudin sapien</p>
+            <p className="text-nft-deep-gray">Cursus fermentum</p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <Image src="/icon.svg" width={32} height={32} alt=" icon" />
+            <p className="text-white text-xl">Pulvinar metus</p>
+            <p className="text-nft-deep-gray">Nunc sed</p>
           </div>
         </div>
-        <div className="px-12">
-          <Image
-            src="/design-image.svg"
-            width={684}
-            height={616}
-            alt="Design Image"
-          />
-        </div>
-      </section>
+      </Overline>
+      <hr className="text-[#262840] my-8" />
     </main>
   );
 }
