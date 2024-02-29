@@ -1,4 +1,4 @@
-export type NftLatestProjectProps = {
+export type NftProjectProps = {
   id: string;
   name: string;
   slug?: string;
@@ -11,7 +11,7 @@ export type NftLatestProjectProps = {
   likes?: string;
 };
 
-export const NftLatestproject: NftLatestProjectProps[] = [
+export const NftLatestproject: NftProjectProps[] = [
   {
     id: "1",
     slug: "nft-1",
@@ -33,7 +33,7 @@ export const NftLatestproject: NftLatestProjectProps[] = [
       price: "3.19 ETH",
     image: "/nft-images/nft-2.svg",
     time: "2:41 min left",
-    bidersIcon: "/bidding-people-3.svg",
+    bidersIcon: "",
     bidersNumber: "35",
     likes: "120",
   },
@@ -74,5 +74,86 @@ export const NftLatestproject: NftLatestProjectProps[] = [
     bidersIcon: "/bidding-people-3.svg",
     bidersNumber: "19",
     likes: "50",
+  },
+];
+
+
+
+export const PopularNFTproject: NftProjectProps[] = [
+  {
+    id: "1",
+    slug: "nft-1",
+    name: "Faucibus habitasse at et platea massa mauris",
+    description: "",
+    price: "2.55 ETH",
+    image: "/nft-images/nft-6.svg",
+    time: "22:59",
+    bidersIcon: "/bidding-people-1.svg",
+    bidersNumber: "101",
+    likes: "",
+  },
+  {
+    id: "2",
+    slug: "nft-2",
+    name: "Diam purus sagittis nisl erat mauris",
+    description:
+      "",
+      price: "22:59 ETH",
+    image: "/nft-images/nft-7.svg",
+    time: "22:59",
+    bidersIcon: "",
+    bidersNumber: "35",
+    likes: "",
+  },
+  {
+    id: "3",
+    slug: "nft-3",
+    name: "Nascetur mauris viverra vel id id sem leo",
+    description: "",
+    price: "2.55 ETH",
+    image: "/nft-images/nft-8.svg",
+    time: "22:59",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "101",
+    likes: "",
+  },
+  {
+    id: "4",
+    slug: "nft-4",
+    name: "Velit, fusce id non dui amet amet maecenas",
+    description:
+      "",
+      price: "2.55 ETH",
+    image: "/nft-images/nft-9.svg",
+    time: "22:59",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "101",
+    likes: "",
+  },
+  {
+    id: "5",
+    slug: "nft-5",
+    name: "Tellus duis neque fringilla pulvinar gravida",
+    description:
+      "",
+      price: "2.55 ETH",
+    image: "/nft-images/nft-10.svg",
+    time: "22:59",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "101",
+    likes: "",
+  },
+  {
+    id: "6",
+    slug: "nft-6",
+    name: "Odio lacus neque ultrices purus eget",
+    description:
+      "",
+      price: "2.55 ETH",
+    image: "/nft-images/nft-11.svg",
+    time: "22:59",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "101",
+    likes: "",
   },
 ];

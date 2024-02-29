@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Hero from "./Components/Hero/Hero";
 import LatestNftCard from "./Components/NftCard/LatestNftCard";
-import { NftLatestproject } from "../../library/nftData";
+import { NftLatestproject,PopularNFTproject } from "../../library/nftData";
 import ToggleButton from "./Components/Button/ToggleButton";
 import Overline from "./Components/OverlineSection/Overline";
+import PopularNftCard from "./Components/NftCard/PopularNftCard";
 
 export default function Home() {
   return (
@@ -55,7 +56,66 @@ export default function Home() {
           </div>
         </div>
       </Overline>
-      <hr className="text-[#262840] my-8" />
+      <hr className="text-[#262840] my-14" />
+      <section className="flex flex-col items-center gap-7 mx-2 md:mx-10 lg:mx-16 xl:mx-32">
+        <p className="text-nft-deep-gray text-base text-center">OVERLINE</p>
+        <h1 className="text-white text-4xl text-center mt-1">
+          Most popular live auctions
+        </h1>
+        <div className="flex gap-3 flex-wrap ">
+          <ToggleButton
+            type="button"
+            className="text-nft-deep-gray border-2 border-nft-light-gray rounded-xl px-1  transition-transform hover:scale-105"
+          >
+            Architecture
+          </ToggleButton>
+          <ToggleButton
+            type="button"
+            className="text-nft-deep-gray border-2 border-nft-light-gray rounded-xl px-1  transition-transform hover:scale-105"
+          >
+            Photography
+          </ToggleButton>
+          <ToggleButton
+            type="button"
+            className="text-nft-deep-gray border-2 border-nft-light-gray rounded-xl px-1  transition-transform hover:scale-105"
+          >
+            Games
+          </ToggleButton>
+          <ToggleButton
+            type="button"
+            className="text-nft-deep-gray border-2 border-nft-light-gray rounded-xl px-1  transition-transform hover:scale-105"
+          >
+            Music
+          </ToggleButton>
+        </div>
+
+        <div className="flex flex-col md:grid md:grid-cols-3 lg:flex lg:flex-row  gap-6">
+          {PopularNFTproject.map((item, index) => (
+            <div key={index}>
+              <PopularNftCard
+                id={item.id}
+                name={item.name}
+                price={item.price}
+                image={item.image}
+                time={item.time}
+                bidersIcon={item.bidersIcon}
+                bidersNumber={item.bidersNumber}
+                likes={item.likes}
+              />
+            </div>
+          ))}
+        </div>
+        <ToggleButton
+          type="button"
+          className="w-[170px] text-nft-deep-gray border-2 border-nft-light-gray rounded-xl px-1  transition-transform hover:scale-105 my-12"
+        >
+          Show more
+        </ToggleButton>
+      </section>
+      <hr className="text-[#262840] my-5" />
+        <div>
+          hello world
+        </div>
     </main>
   );
 }
