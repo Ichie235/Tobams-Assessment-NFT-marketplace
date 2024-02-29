@@ -7,11 +7,12 @@ import Overline from "./Components/OverlineSection/Overline";
 import PopularNftCard from "./Components/NftCard/PopularNftCard";
 import Link from "next/link";
 import EllipseRing from "./Components/Hero/Ellipse/EllipseRing";
+import Footer from "./Components/Footer/Footer";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-10">
-      <EllipseRing/>
+      <EllipseRing />
       <Hero />
       <section className="mt-60 md:mt-96 lg:mt-[31.25rem] h-auto">
         <h1 className="text-white text-2xl md:text-4xl text-center mt-12 mb-16 lg:mb-24 ">
@@ -119,6 +120,7 @@ export default function Home() {
       </section>
       <hr className="text-[#262840] my-5" />
       <div>hello world</div>
+      <Footer />
     </main>
   );
 }
