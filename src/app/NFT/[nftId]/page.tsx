@@ -27,31 +27,31 @@ export default function NftProjects({ params: { nftId } }: Params) {
   return (
     <>
       <main className="flex flex-col items-start justify-center px-32 py-24">
-        <section className="grid grid-cols-2 gap-24 border border-nft-light-gray rounded-xl p-3">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 xl:gap-24 border border-nft-light-gray rounded-xl p-3">
           <div>
             <Image
               src={projectDetails.image}
               width={684}
               height={885}
               alt={projectDetails.name}
-              className="rounded-xl"
+              className="rounded-xl w-[250px] h-[300px] md:w-[450px] md:h-[600px] lg:w-[684px] lg:h-[100vh]"
             />
           </div>
           <div>
-            <h1 className="w-[469px] text-white font-semibold text-4xl mt-8">
+            <h1 className="w-full xl:w-[469px] text-white font-semibold text-2xl md:text-3xl xl:text-4xl mt-8">
               {projectDetails.name}
             </h1>
             <p className="text-nft-deep-gray my-4">
               {projectDetails.description}
             </p>
-            <div className="flex gap-12 my-9">
+            <div className="flex gap-9 xl:gap-12 my-5 xl:my-9">
               <div className="flex gap-1">
                 <Image
                   src={projectDetails.creatorImage}
                   width={90}
                   height={90}
                   alt={projectDetails.name}
-                  className="rounded-full"
+                  className="rounded-full lg:w-[70px] lg:h-[70px] xl:w-[90px] xl:h-[90px]"
                 />
                 <div className="flex flex-col justify-center  gap-2 text-white">
                   <p className="text-nft-deep-gray">{projectDetails.creator}</p>
