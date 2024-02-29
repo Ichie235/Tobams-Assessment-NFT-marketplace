@@ -1,72 +1,78 @@
 export type NftLatestProjectProps = {
   id: string;
   name: string;
-  slug: string;
-  description: string;
+  slug?: string;
+  description?: string;
+  price?: string;
   image: string;
   time: string;
   bidersIcon: string;
-  bidersNumber: number;
-  likes: Number;
+  bidersNumber?: string;
+  likes?: string;
 };
 
 export const NftLatestproject: NftLatestProjectProps[] = [
   {
     id: "1",
-    slug: "blog-wesite",
-    name: "Blog Wesite",
-    description: "This project was built with Node.js, Express and Mongodb.",
+    slug: "nft-1",
+    name: "Tristique diam a, enim, eros tellus. Viverra etiam",
+    description: "",
+    price: "2.55 ETH",
     image: "/nft-images/nft-1.svg",
-    time: "",
-    bidersIcon: "",
-    bidersNumber: 6,
-    likes: 2,
+    time: "2:41 min left",
+    bidersIcon: "/bidding-people-1.svg",
+    bidersNumber: "14",
+    likes: "54",
   },
   {
     id: "2",
-    slug: "one7thapartment",
-    name: "17Th Apartment",
+    slug: "nft-2",
+    name: "Vulputate felis purus viverra morbi facilisi eget",
     description:
-      "Utilizing the power of Next.js, TypeScript, Tailwind, and Flutterwave API.",
+      "",
+      price: "3.19 ETH",
     image: "/nft-images/nft-2.svg",
-    time: "",
-    bidersIcon: "",
-    bidersNumber: 6,
-    likes: 2,
+    time: "2:41 min left",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "35",
+    likes: "120",
   },
   {
     id: "3",
-    slug: "avvic-bank",
-    name: "Avvic Bank",
-    description: "Utilizing the power of React, SCSS, Routing, Node.js.",
+    slug: "nft-3",
+    name: "Dui accumsan leo vestibulum ornare eu",
+    description: "",
+    price: "1.11 ETH",
     image: "/nft-images/nft-3.svg",
-    time: "",
-    bidersIcon: "",
-    bidersNumber: 6,
-    likes: 2,
+    time: "22:59 min left",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "101",
+    likes: "570",
   },
   {
     id: "4",
-    slug: "ecommerce",
-    name: "Ecommerce Wesite",
+    slug: "nft-4",
+    name: "Senectus adipiscing nascetur accumsan etiam",
     description:
-      "This project was built with Next.Js, Tailwindcss, Prisma, Mongodb and AuthO authentication.",
+      "",
+      price: "1.63 ETH",
     image: "/nft-images/nft-4.svg",
-    time: "",
-    bidersIcon: "",
-    bidersNumber: 6,
-    likes: 2,
+    time: "22:59 min left",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "12",
+    likes: "98",
   },
   {
     id: "5",
-    slug: "restaurant-website",
-    name: "Restaurant Website",
+    slug: "nft-5",
+    name: "Mattis at diam lorem nisl nam sed sociis",
     description:
-      "This project was built with Next.Js, Tailwindcss, Prisma, Mongodb and JWT authentication.",
-    image: "/nft-images/nft-5.svg",
-    time: "",
-    bidersIcon: "",
-    bidersNumber: 6,
-    likes: 2,
+      "",
+      price: "2.78 ETH",
+    image: "/nft-images/nft-3.svg",
+    time: "37:01 min left",
+    bidersIcon: "/bidding-people-3.svg",
+    bidersNumber: "19",
+    likes: "50",
   },
 ];

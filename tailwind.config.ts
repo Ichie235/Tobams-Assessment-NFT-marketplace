@@ -16,6 +16,8 @@ const config: Config = {
           "linear-gradient(104.42deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 60.23%), linear-gradient(0deg, #2A27C9, #2A27C9)",
         "nft-purple-blue-gr":
           "linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%)",
+        "nft-deep-blue-gr":
+          "linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%)",
       },
       colors: {
         "nft-navy-blue": "#060714",

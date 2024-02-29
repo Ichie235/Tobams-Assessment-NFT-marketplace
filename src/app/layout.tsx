@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="relative w-full h-screen overflow-x-hidden bg-nft-navy-blue">
+        <main className="relative w-full h-screen  bg-nft-navy-blue overflow-x-hidden">
           <Navbar />
           <>
             <EllipseRing />

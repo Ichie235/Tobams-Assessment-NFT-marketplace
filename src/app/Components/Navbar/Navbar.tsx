@@ -10,7 +10,7 @@ export default function Navbar({}): JSX.Element {
 
   const handleOpenMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   return (
-    <nav className="fixed h-[4rem] text-[.875em] w-full z-50 top-0 left-0 px-10 py-3 mt-4 md:mt-0 md:px-16 lg:py-[48px] flex justify-between items-center">
+    <nav className="fixed h-[4rem] text-[.875em] w-full z-50 top-0 left-0 px-10 py-3 mt-4 md:mt-0 md:px-16 lg:py-[48px] flex justify-between items-center ">
       <div className="flex h-full basis-2/3 gap-[8rem] lg:items-center justify-between">
         <Link href={"/"}>
           <Image
