@@ -21,7 +21,7 @@ export default function PopularNftCard({
         />
       </div>
       <div className="flex justify-between">
-        <p className="w-[212] text-white font-bold px-3">{name}</p>
+        <p className=" text-white font-bold px-1">{name}</p>
       </div>
       <div className="flex justify-between  text-white text-sm font-light">
         <div className="flex justify-center items-center">

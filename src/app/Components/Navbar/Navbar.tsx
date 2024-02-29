@@ -21,7 +21,7 @@ export default function Navbar({}): JSX.Element {
             className="w-[213px] h-[34px]"
           />
         </Link>
-        <ul className="hidden lg:flex h-full text-nft-deep-gray items-center gap-8 w-[40%]">
+        <ul className="hidden lg:flex h-full text-nft-deep-gray font-bold items-center gap-8 w-[40%]">
           <li>
             <Link href={"/"}>Home</Link>
           </li>
@@ -39,7 +39,7 @@ export default function Navbar({}): JSX.Element {
       <div className="hidden lg:flex items-center gap-4">
         <ToggleButton
           type="button"
-          className="w-[117px] h-[52px] text-nft-deep-gray border border-nft-light-gray rounded-xl  cursor-pointer"
+          className="w-[117px] h-[52px] text-nft-deep-gray border font-bold border-nft-light-gray rounded-xl  cursor-pointer"
         >
           <Link href="#" role="link">
             Contact
@@ -47,7 +47,7 @@ export default function Navbar({}): JSX.Element {
         </ToggleButton>
         <ToggleButton
           type="button"
-          className="w-[145px] h-[52px] bg-nft-purple-blue-gr text-white rounded-xl cursor-pointer"
+          className="w-[145px] h-[52px] bg-nft-purple-blue-gr text-white font-bold rounded-xl cursor-pointer"
         >
           <Link href="#" role="link">
             My Account

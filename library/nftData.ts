@@ -4,6 +4,9 @@ export type NftProjectProps = {
   slug?: string;
   description?: string;
   price?: string;
+  creator?: string;
+  creatorEmail?: string;
+  creatorImage: string;
   image: string;
   time: string;
   bidersIcon: string;
@@ -16,8 +19,12 @@ export const NftLatestproject: NftProjectProps[] = [
     id: "1",
     slug: "nft-1",
     name: "Tristique diam a, enim, eros tellus. Viverra etiam",
-    description: "",
+    description:
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
     price: "2.55 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-1.svg",
     time: "2:41 min left",
     bidersIcon: "/bidding-people-1.svg",
@@ -29,8 +36,11 @@ export const NftLatestproject: NftProjectProps[] = [
     slug: "nft-2",
     name: "Vulputate felis purus viverra morbi facilisi eget",
     description:
-      "",
-      price: "3.19 ETH",
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
+    price: "3.19 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-2.svg",
     time: "2:41 min left",
     bidersIcon: "",
@@ -43,6 +53,9 @@ export const NftLatestproject: NftProjectProps[] = [
     name: "Dui accumsan leo vestibulum ornare eu",
     description: "",
     price: "1.11 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-3.svg",
     time: "22:59 min left",
     bidersIcon: "/bidding-people-3.svg",
@@ -53,9 +66,11 @@ export const NftLatestproject: NftProjectProps[] = [
     id: "4",
     slug: "nft-4",
     name: "Senectus adipiscing nascetur accumsan etiam",
-    description:
-      "",
-      price: "1.63 ETH",
+    description: "",
+    price: "1.63 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-4.svg",
     time: "22:59 min left",
     bidersIcon: "/bidding-people-3.svg",
@@ -67,8 +82,11 @@ export const NftLatestproject: NftProjectProps[] = [
     slug: "nft-5",
     name: "Mattis at diam lorem nisl nam sed sociis",
     description:
-      "",
-      price: "2.78 ETH",
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
+    price: "2.78 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-3.svg",
     time: "37:01 min left",
     bidersIcon: "/bidding-people-3.svg",
@@ -77,15 +95,17 @@ export const NftLatestproject: NftProjectProps[] = [
   },
 ];
 
-
-
 export const PopularNFTproject: NftProjectProps[] = [
   {
     id: "1",
-    slug: "nft-1",
+    slug: "nft-6",
     name: "Faucibus habitasse at et platea massa mauris",
-    description: "",
+    description:
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
     price: "2.55 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-6.svg",
     time: "22:59",
     bidersIcon: "/bidding-people-1.svg",
@@ -94,11 +114,14 @@ export const PopularNFTproject: NftProjectProps[] = [
   },
   {
     id: "2",
-    slug: "nft-2",
+    slug: "nft-7",
     name: "Diam purus sagittis nisl erat mauris",
     description:
-      "",
-      price: "22:59 ETH",
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
+    price: "22:59 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-7.svg",
     time: "22:59",
     bidersIcon: "",
@@ -107,10 +130,14 @@ export const PopularNFTproject: NftProjectProps[] = [
   },
   {
     id: "3",
-    slug: "nft-3",
+    slug: "nft-8",
     name: "Nascetur mauris viverra vel id id sem leo",
-    description: "",
+    description:
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
     price: "2.55 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-8.svg",
     time: "22:59",
     bidersIcon: "/bidding-people-3.svg",
@@ -119,11 +146,14 @@ export const PopularNFTproject: NftProjectProps[] = [
   },
   {
     id: "4",
-    slug: "nft-4",
+    slug: "nft-9",
     name: "Velit, fusce id non dui amet amet maecenas",
     description:
-      "",
-      price: "2.55 ETH",
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
+    price: "2.55 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-9.svg",
     time: "22:59",
     bidersIcon: "/bidding-people-3.svg",
@@ -132,24 +162,31 @@ export const PopularNFTproject: NftProjectProps[] = [
   },
   {
     id: "5",
-    slug: "nft-5",
+    slug: "nft-10",
     name: "Tellus duis neque fringilla pulvinar gravida",
     description:
-      "",
-      price: "2.55 ETH",
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
+    price: "2.55 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-10.svg",
     time: "22:59",
+
     bidersIcon: "/bidding-people-3.svg",
     bidersNumber: "101",
     likes: "",
   },
   {
     id: "6",
-    slug: "nft-6",
+    slug: "nft-11",
     name: "Odio lacus neque ultrices purus eget",
     description:
-      "",
-      price: "2.55 ETH",
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
+    price: "2.55 ETH",
+    creator: "Creator",
+    creatorEmail: "@brook_sim",
+    creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-11.svg",
     time: "22:59",
     bidersIcon: "/bidding-people-3.svg",
