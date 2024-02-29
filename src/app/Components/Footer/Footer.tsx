@@ -65,7 +65,7 @@ export default function Footer({}): JSX.Element {
         <Link href="#">Community</Link>
         <ToggleButton
           type="button"
-          className="w-36 h-14 bg-nft-royal-blue-gr rounded-xl mt-9"
+          className="w-36 h-14 bg-nft-royal-blue-gr rounded-xl mt-9 transition-transform hover:scale-105 cursor-pointer"
         >
           My account
         </ToggleButton>

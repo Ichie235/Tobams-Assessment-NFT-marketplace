@@ -23,23 +23,23 @@ export default function Navbar({}): JSX.Element {
         </Link>
         <ul className="hidden lg:flex h-full text-nft-deep-gray font-bold items-center gap-8 w-[40%]">
           <li>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"} className="hover:text-white">Home</Link>
           </li>
           <li>
-            <Link href={"#"}>Roadmap</Link>
+            <Link href={"#"} className="hover:text-white">Roadmap</Link>
           </li>
           <li>
-            <Link href={"#"}>Discover</Link>
+            <Link href={"#"} className="hover:text-white">Discover</Link>
           </li>
           <li>
-            <Link href={"#"}>Community</Link>
+            <Link href={"#"} className="hover:text-white">Community</Link>
           </li>
         </ul>
       </div>
       <div className="hidden lg:flex items-center gap-4">
         <ToggleButton
           type="button"
-          className="w-[117px] h-[52px] text-nft-deep-gray border font-bold border-nft-light-gray rounded-xl  cursor-pointer"
+          className="w-[117px] h-[52px] text-nft-deep-gray border font-bold border-nft-light-gray rounded-xl transition-transform hover:scale-105 cursor-pointer"
         >
           <Link href="#" role="link">
             Contact
@@ -47,7 +47,7 @@ export default function Navbar({}): JSX.Element {
         </ToggleButton>
         <ToggleButton
           type="button"
-          className="w-[145px] h-[52px] bg-nft-purple-blue-gr text-white font-bold rounded-xl cursor-pointer"
+          className="w-[145px] h-[52px] bg-nft-purple-blue-gr text-white font-bold rounded-xl transition-transform hover:scale-105 cursor-pointer"
         >
           <Link href="#" role="link">
             My Account

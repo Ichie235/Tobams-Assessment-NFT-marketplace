@@ -51,7 +51,8 @@ export const NftLatestproject: NftProjectProps[] = [
     id: "3",
     slug: "nft-3",
     name: "Dui accumsan leo vestibulum ornare eu",
-    description: "",
+    description:
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
     price: "1.11 ETH",
     creator: "Creator",
     creatorEmail: "@brook_sim",
@@ -66,7 +67,8 @@ export const NftLatestproject: NftProjectProps[] = [
     id: "4",
     slug: "nft-4",
     name: "Senectus adipiscing nascetur accumsan etiam",
-    description: "",
+    description:
+      "Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor pulvinar ultricies dolor feugiat aliquam commodo.",
     price: "1.63 ETH",
     creator: "Creator",
     creatorEmail: "@brook_sim",

@@ -18,6 +18,8 @@ const config: Config = {
           "linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%)",
         "nft-deep-blue-gr":
           "linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%)",
+        "nft-white-on-black":
+          "linear-gradient(187.96deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 93.86%)",
       },
       colors: {
         "nft-navy-blue": "#060714",
