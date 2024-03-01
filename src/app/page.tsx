@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Hero from "./Components/Hero/Hero";
 import LatestNftCard from "./Components/NftCard/LatestNftCard";
-import { NftLatestproject, PopularNFTproject } from "../../library/nftData";
+import {
+  NftLatestproject,
+  PopularNFTproject,
+  TopNFTproject,
+} from "../../library/nftData";
 import ToggleButton from "./Components/Button/ToggleButton";
 import Overline from "./Components/OverlineSection/Overline";
 import PopularNftCard from "./Components/NftCard/PopularNftCard";
 import Link from "next/link";
 import EllipseRing from "./Components/Hero/Ellipse/EllipseRing";
 import Footer from "./Components/Footer/Footer";
+import TopNftLowerPriceCard from "./Components/TopNFT/TopNftLowerPriceCard";
+import TopNFT from "./Components/TopNFT/TopNFT";
 
 export default function Home() {
   return (
@@ -36,12 +42,19 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <Overline
-        title=" Sapien ipsum scelerisque convallis fusce"
-        description=" Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor
+      {/* OVERLINE SECTION */}
+      <section>
+        <Overline
+          title=" Sapien ipsum scelerisque convallis fusce"
+          description=" Ut amet vulputate faucibus vitae semper eget auctor. Diam tempor
           pulvinar ultricies dolor feugiat aliquam commodo."
-        image="/design-image.svg"
-      />
+          image="/design-image.svg"
+        />
+      </section>
+      {/* TOP NFT SECTION */}
+      <section className="mt-20">
+        <TopNFT />
+      </section>
       <Overline
         className="lg:flex lg:flex-row-reverse gap-16"
         title=" Habitant tristique aliquam in vel scelerisque"
@@ -63,7 +76,7 @@ export default function Home() {
       </Overline>
       <hr className="text-[#262840] my-14" />
       <section className="flex flex-col items-center gap-7 mx-2 md:mx-10 lg:mx-16 ">
-        <p className="text-nft-deep-gray text-base text-center">OVERLINE</p>
+      <p className="text-nft-deep-gray text-xl text-center font-semibold">OVERLINE</p>
         <h1 className="text-white text-4xl text-center mt-1">
           Most popular live auctions
         </h1>
@@ -101,7 +114,7 @@ export default function Home() {
                 id={item.id}
                 name={item.name}
                 price={item.price}
-                creatorImage=""
+                creatorImage={item.creatorImage}
                 image={item.image}
                 time={item.time}
                 bidersIcon={item.bidersIcon}
@@ -119,7 +132,6 @@ export default function Home() {
         </ToggleButton>
       </section>
       <hr className="text-[#262840] my-5" />
-      <div>hello world</div>
       <Footer />
     </main>
   );
