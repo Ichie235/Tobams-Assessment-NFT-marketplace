@@ -36,7 +36,7 @@ export default function TopNFT() {
       <section className="ml-4 w-[440px] flex flex-col items-center  gap-4 border border-nft-light-gray rounded-2xl px-4 py-6">
         <h1 className="text-white text-3xl">Top NFT at a lower price</h1>
         {TopNFTproject.map((item, index) => (
-          <Link key={index} href={`/PopularNFT/${item.slug}`}>
+          <Link key={index} href={`/TopNFT/${item.slug}`}>
             <TopNftLowerPriceCard
               id={item.id}
               name={item.name}

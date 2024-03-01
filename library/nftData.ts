@@ -43,7 +43,7 @@ export const NftLatestproject: NftProjectProps[] = [
     creatorImage: "/Avatar.svg",
     image: "/nft-images/nft-2.svg",
     time: "2:41 min left",
-    bidersIcon: "",
+    bidersIcon: "/bidding-people-2.svg",
     bidersNumber: "35",
     likes: "120",
   },

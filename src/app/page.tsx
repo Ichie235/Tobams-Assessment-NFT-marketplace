@@ -12,8 +12,8 @@ import PopularNftCard from "./Components/NftCard/PopularNftCard";
 import Link from "next/link";
 import EllipseRing from "./Components/Hero/Ellipse/EllipseRing";
 import Footer from "./Components/Footer/Footer";
-import TopNftLowerPriceCard from "./Components/TopNFT/TopNftLowerPriceCard";
-import TopNFT from "./Components/TopNFT/TopNFT";
+import TopNftLowerPriceCard from "./Components/TopNftComponent/TopNftLowerPriceCard";
+import TopNFT from "./Components/TopNftComponent/TopNFT";
 
 export default function Home() {
   return (
