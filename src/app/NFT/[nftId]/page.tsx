@@ -34,10 +34,10 @@ export default function NftProjects({ params: { nftId } }: Params) {
               width={684}
               height={885}
               alt={projectDetails.name}
-              className="rounded-xl w-[250px] h-[300px] md:w-[450px] md:h-[600px] lg:w-[684px] lg:h-[100vh]"
+              className="rounded-xl w-[250px] h-[300px] md:w-[450px] md:h-[600px] lg:w-[684px] lg:h-[100vh] md:mx-auto lg:mx-0"
             />
           </div>
-          <div>
+          <div className="mx-5 lg:mx-0">
             <h1 className="w-full xl:w-[469px] text-white font-semibold text-2xl md:text-3xl xl:text-4xl mt-8">
               {projectDetails.name}
             </h1>
