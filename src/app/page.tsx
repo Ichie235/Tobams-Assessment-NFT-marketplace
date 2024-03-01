@@ -96,7 +96,7 @@ export default function Home() {
 
         <div className="flex flex-col md:grid md:grid-cols-3 lg:flex lg:flex-row lg:justify-center lg:items-center  gap-6">
           {PopularNFTproject.map((item, index) => (
-            <div key={index}>
+            <Link key={index} href={`/PopularNFT/${item.slug}`}>
               <PopularNftCard
                 id={item.id}
                 name={item.name}
@@ -108,7 +108,7 @@ export default function Home() {
                 bidersNumber={item.bidersNumber}
                 likes={item.likes}
               />
-            </div>
+            </Link>
           ))}
         </div>
         <ToggleButton

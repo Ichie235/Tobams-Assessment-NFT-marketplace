@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import {
-  NftLatestproject,
   NftProjectProps,
   PopularNFTproject,
 } from "../../../../library/nftData";
@@ -15,12 +14,12 @@ import Link from "next/link";
 
 type Params = {
   params: {
-    nftId: string;
+    popularNftId: string;
   };
 };
-export default function NftProjects({ params: { nftId } }: Params) {
-  const projectDetails: NftProjectProps | undefined = NftLatestproject.find(
-    (p) => p.slug === nftId
+export default function PopularNftProjects({ params: { popularNftId } }: Params) {
+  const projectDetails: NftProjectProps | undefined = PopularNFTproject.find(
+    (p) => p.slug === popularNftId
   );
 
   if (!projectDetails) {
@@ -127,7 +126,7 @@ export default function NftProjects({ params: { nftId } }: Params) {
           </h1>
           <div className="flex flex-col md:grid md:grid-cols-3 xl:flex xl:flex-row xl:justify-center xl:items-center  gap-4">
             {PopularNFTproject.map((item, index) => (
-              <Link key={index} href={`/PopularNFT/${item.slug}`}>
+               <Link key={index} href={`/PopularNFT/${item.slug}`}>
                 <PopularNftCard
                   id={item.id}
                   name={item.name}
