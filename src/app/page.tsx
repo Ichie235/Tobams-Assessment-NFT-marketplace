@@ -17,7 +17,7 @@ import TopNFT from "./Components/TopNftComponent/TopNFT";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10">
+    <main className="flex flex-col items-center gap-10">
       <EllipseRing />
       <Hero />
       <section className="mt-60 md:mt-96 lg:mt-[31.25rem] h-auto">
@@ -52,7 +52,7 @@ export default function Home() {
         />
       </section>
       {/* TOP NFT SECTION */}
-      <section className="mt-20">
+      <section className="mt-20 px-6 md:px-0">
         <TopNFT />
       </section>
       <Overline
@@ -76,7 +76,9 @@ export default function Home() {
       </Overline>
       <hr className="text-[#262840] my-14" />
       <section className="flex flex-col items-center gap-7 mx-2 md:mx-10 lg:mx-16 ">
-      <p className="text-nft-deep-gray text-xl text-center font-semibold">OVERLINE</p>
+        <p className="text-nft-deep-gray text-xl text-center font-semibold">
+          OVERLINE
+        </p>
         <h1 className="text-white text-4xl text-center mt-1">
           Most popular live auctions
         </h1>
