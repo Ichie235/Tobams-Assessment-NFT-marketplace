@@ -1,6 +1,5 @@
 import React from "react";
 import CustomInput from "../../FormInput/CustomInput";
-import { FormData } from "../../../../../type/FormData";
 import Image from "next/image";
 
 interface HeaderWithCustomInputProps {
@@ -14,15 +13,15 @@ type brandIconProps = {
 
 export const nftIcons: brandIconProps[] = [
   {
-    src: "/hero-icons/tiger-nft-icon.png",
+    src: "/hero-images/tiger-nft-icon.png",
     alt: "tiger nft",
   },
   {
-    src: "/hero-icons/parrot-nft-icon.png",
+    src: "/hero-images/parrot-nft-icon.png",
     alt: "parrot nft",
   },
   {
-    src: "/hero-icons/wolf-nft-icon.png",
+    src: "/hero-images/wolf-nft-icon.png",
     alt: "wolf nft",
   },
 ];

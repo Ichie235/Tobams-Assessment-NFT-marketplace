@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import HeaderWithCustomInput from "./HeaderWithCustomInput/HeaderWithCustomInput";
 import { FormData } from "../../../../type/FormData";
 
