@@ -1,46 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import Hero from "./Components/Hero/Hero";
-import LatestNftCard from "./Components/NftCard/LatestNftCard";
-import {
-  NftLatestproject,
-  PopularNFTproject,
-  TopNFTproject,
-} from "../../library/nftData";
+import { PopularNFTproject } from "../../library/nftData";
 import ToggleButton from "./Components/Button/ToggleButton";
 import Overline from "./Components/OverlineSection/Overline";
 import PopularNftCard from "./Components/NftCard/PopularNftCard";
 import Link from "next/link";
 import EllipseRing from "./Components/Hero/Ellipse/EllipseRing";
 import Footer from "./Components/Footer/Footer";
-import TopNftLowerPriceCard from "./Components/TopNftComponent/TopNftLowerPriceCard";
 import TopNFT from "./Components/TopNftComponent/TopNFT";
+import Carousel from "./Components/Carousel/Carousel";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-10">
+    <main className="flex flex-col items-center gap-10 relative">
       <EllipseRing />
       <Hero />
       <section className="mt-60 md:mt-96 lg:mt-[31.25rem] h-auto">
         <h1 className="text-white text-2xl md:text-4xl text-center mt-12 mb-16 lg:mb-24 ">
           Latest live auctions
         </h1>
-        <div className="flex  gap-6">
-          {NftLatestproject.map((item, index) => (
-            <Link key={index} href={`/NFT/${item.slug}`}>
-              <LatestNftCard
-                id={item.id}
-                name={item.name}
-                price={item.price}
-                creatorImage=""
-                image={item.image}
-                time={item.time}
-                bidersIcon={item.bidersIcon}
-                bidersNumber={item.bidersNumber}
-                likes={item.likes}
-              />
-            </Link>
-          ))}
-        </div>
+        <Carousel />
       </section>
       {/* OVERLINE SECTION */}
       <section>

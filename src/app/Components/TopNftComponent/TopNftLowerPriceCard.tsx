@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { NftProjectProps } from "../../../../library/nftData";
-import ToggleButton from "../Button/ToggleButton";
+
 
 export default function TopNftLowerPriceCard({
   image,

@@ -11,7 +11,7 @@ export default function LatestNftCard({
   time,
 }: NftProjectProps) {
   return (
-    <main className="flex flex-col md:gap-4 lg:gap-6 px-2 py-4 md:px-6 md:pt-2 md:pb-4 border border-nft-light-gray rounded-3xl w-[280px] md:w-full cursor-pointer">
+    <main className="w-[280px] md:w-full flex flex-col md:gap-4 lg:gap-6 px-2 py-4 md:px-6 md:pt-2 md:pb-4 border border-nft-light-gray rounded-3xl   cursor-pointer">
       <div>
         <Image
           src={image}

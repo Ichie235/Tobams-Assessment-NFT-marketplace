@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { NftProjectProps, TopNFTproject } from "../../../../library/nftData";
-
 import DynamicNftProject from "@/app/Components/DynamicRendering/DynamicRoute";
 
 type Params = {

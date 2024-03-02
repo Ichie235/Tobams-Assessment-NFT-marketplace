@@ -6,7 +6,8 @@ import Footer from "@/app/Components/Footer/Footer";
 import CopyIcon from "../../../../svg/CopyIcon";
 import ShareIcon from "../../../../svg/ShareIcon";
 import HeartIcon from "../../../../svg/HeartIcon";
-import Link from "next/link";
+
+
 
 interface DynamicNftProjectProps {
   projectDetails: NftProjectProps;
